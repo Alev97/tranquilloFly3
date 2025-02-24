@@ -1,0 +1,65 @@
+/* navbar.css */
+
+/* Stile generale per la navbar */
+.navbar {
+  margin-bottom: 1rem; /* Spazio sotto la navbar */
+  padding: 0.05rem; /* Riduci ulteriormente il padding della navbar */
+  height: auto;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+}
+
+/* Stile per il contenitore della navbar */
+.container{
+  width: 100vw; /* Larghezza massima del contenitore */
+}
+
+/* Stile per i link della navbar */
+.nav-link {
+  color: #ffffff; /* Colore del testo */
+  padding: 1rem 2rem; /* Aumenta il padding per i link per renderli più grandi */
+  transition: background-color 0.3s; /* Transizione per il colore di sfondo */
+  font-size: 23px; /* Aumenta la dimensione del font per i link */
+}
+
+/* Effetto hover per i link */
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Colore di sfondo al passaggio del mouse */
+}
+
+/* Stile per il toggle della navbar su schermi piccoli */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1); /* Colore del bordo del toggle */
+}
+
+/* Stile per il toggle icon */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' fill='white'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Media query per schermi piccoli */
+@media (max-width: 768px) {
+  .navbar {
+      padding: 0.1rem; /* Mantieni il padding ridotto su schermi piccoli */
+  }
+
+  .nav-link {
+      padding: 0.75rem 1.5rem; /* Aumenta il padding per i link su schermi piccoli */
+      font-size: 16px; /* Mantieni la dimensione del font */
+  }
+}
+
+/* Media query per schermi extra piccoli */
+@media (max-width: 576px) {
+  .navbar {
+      padding: 0.1rem; /* Mantieni il padding ridotto su schermi molto piccoli */
+  }
+
+  .nav-link {
+      padding: 0.75rem 1.5rem; /* Mantieni un padding decente per i link */
+      font-size: 16px; /* Mantieni la dimensione del font */
+  }
+}

@@ -1,0 +1,100 @@
+/* home.css */
+
+/* Sezione Intro */
+.intro {
+  margin-top: 60px; /* Spazio sopra la sezione per evitare che si sovrapponga alla navbar */
+  padding: 20px;
+}
+
+/* Colonna sinistra */
+.left-column {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-column .promo-image {
+  width: 100%;  /* L'immagine occupa tutta la larghezza della colonna */
+  height: auto;
+  object-fit: cover;  /* Assicura che l'immagine si adatti senza deformarsi */
+}
+
+/* Colonna centrale */
+.center-column {
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-column .promo-image {
+  width: 80%; /* Puoi adattarlo come preferisci */
+  max-width: 300px; /* Limita la larghezza dell'immagine */
+  height: auto;
+  object-fit: cover;
+}
+
+.center-column h1 {
+  font-size: 2rem;  /* Dimensione del titolo */
+  margin-top: 20px;
+}
+
+.center-column .read-the-docs {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Colonna destra */
+.right-column {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-column .promo-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Media query per schermi piccoli */
+@media (max-width: 768px) {
+  .intro {
+    padding: 10px;
+  }
+
+  .left-column, .right-column {
+    padding: 0;
+  }
+
+  .center-column {
+    padding: 10px;
+  }
+
+  .center-column h1 {
+    font-size: 1.5rem;
+  }
+
+  .center-column .read-the-docs {
+    font-size: 0.9rem;
+  }
+
+  .center-column .promo-image {
+    width: 100%;  /* L'immagine centrale occupa la larghezza completa su schermi piccoli */
+  }
+}
+
+@media (max-width: 576px) {
+  .center-column h1 {
+    font-size: 1.2rem;
+  }
+
+  .center-column .read-the-docs {
+    font-size: 0.85rem;
+  }
+}

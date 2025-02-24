@@ -1,0 +1,33 @@
+/* tabelle.css */
+
+/* Stile per la tabella */
+.table {
+  margin: 20px 0; /* Margine sopra e sotto la tabella */
+}
+
+/* Stile per le celle della tabella */
+.table td, .table th {
+  vertical-align: middle; /* Allinea verticalmente il contenuto al centro */
+}
+
+/* Stile per le celle con bordo rosso */
+.table td[style*="border: 2px solid red"] {
+  background-color: #ffe6e6; /* Colore di sfondo per le celle con bordo rosso */
+}
+
+/* Media query per schermi piccoli */
+@media (max-width: 576px) {
+  .table {
+      font-size: 14px; /* Riduci la dimensione del font su schermi piccoli */
+  }
+}
+
+.container {
+  margin: 10px;
+  padding: 20px;
+  justify-content: flex-start;
+}
+
+.navbar {
+  justify-content: flex-start;
+}

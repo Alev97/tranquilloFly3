@@ -1,0 +1,42 @@
+
+nav {
+    background-color: #f5efef; /* Colore di sfondo della navbar */
+    padding: 10px; /* Padding interno */
+  }
+  
+  nav ul {
+    list-style-type: none; /* Rimuove i punti elenco */
+    margin: 0; /* Rimuove il margine */
+    padding: 0; /* Rimuove il padding */
+    display: flex; /* Utilizza Flexbox per disporre gli elementi in fila */
+    justify-content: space-around; /* Spazia uniformemente gli elementi */
+  }
+  
+  nav li {
+    flex: 1; /* Ogni elemento della lista occupa lo stesso spazio */
+  }
+  
+  nav a {
+    color: rgb(32, 211, 218); /* Colore del testo */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    display: block; /* Rende l'intera area cliccabile */
+    text-align: center; /* Allinea il testo al centro */
+    padding: 10px; /* Padding interno per i link */
+    transition: background-color 0.3s; /* Transizione per il colore di sfondo */
+  }
+  
+  nav a:hover {
+    background-color: #575757; /* Colore di sfondo al passaggio del mouse */
+  }
+  
+  /* Media query per schermi più piccoli */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column; /* Cambia la direzione a colonna */
+      align-items: center; /* Allinea gli elementi al centro */
+    }
+  
+    nav li {
+      width: 100%; /* Ogni elemento occupa la larghezza completa */
+    }
+  }

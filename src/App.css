@@ -1,0 +1,71 @@
+/* App.css */
+
+/* Stile generale per il corpo */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Colore di sfondo chiaro */
+}
+
+/* Contenitore principale */
+div {
+  padding: 20px; /* Padding per il contenitore principale */
+}
+
+/* Navbar */
+nav {
+  background-color: #333; /* Colore di sfondo della navbar */
+  padding: 10px; /* Padding interno */
+}
+
+nav ul {
+  list-style-type: none; /* Rimuove i punti elenco */
+  margin: 0; /* Rimuove il margine */
+  padding: 0; /* Rimuove il padding */
+  display: flex; /* Utilizza Flexbox per disporre gli elementi in fila */
+  justify-content: space-around; /* Spazia uniformemente gli elementi */
+}
+
+nav li {
+  flex: 1; /* Ogni elemento della lista occupa lo stesso spazio */
+}
+
+nav a {
+  color: white; /* Colore del testo */
+  text-decoration: none; /* Rimuove la sottolineatura */
+  display: block; /* Rende l'intera area cliccabile */
+  text-align: center; /* Allinea il testo al centro */
+  padding: 10px; /* Padding interno per i link */
+  transition: background-color 0.3s; /* Transizione per il colore di sfondo */
+}
+
+nav a:hover {
+  background-color: #575757; /* Colore di sfondo al passaggio del mouse */
+}
+
+/* Stile per il contenuto principale */
+h1 {
+  text-align: center; /* Allinea il titolo al centro */
+  color: #333; /* Colore del testo */
+}
+
+/* Stile per le card (se usi card per i dati) */
+.card {
+  background-color: white; /* Colore di sfondo delle card */
+  border-radius: 5px; /* Angoli arrotondati */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+  padding: 20px; /* Padding interno */
+  margin: 10px 0; /* Margine verticale */
+}
+
+/* Media query per schermi più piccoli */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column; /* Cambia la direzione a colonna */
+    align-items: center; /* Allinea gli elementi al centro */
+  }
+
+  nav li {
+    width: 100%; /* Ogni elemento occupa la larghezza completa */
+  }
+}
